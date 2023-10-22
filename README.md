@@ -29,14 +29,14 @@ Same happens for 4 and 2 and eventually the queue becomes empty and the program 
 ## Time complexity
 ### 1. Initalizing Data Structures:
 >• Creatng the visitednodes list of length self.noOfNodes takes O(V) tme, where V is the
-number of nodes.
->• Creatng the queue with a maximum size of self.noOfNodes also takes O(V) tme.
+number of nodes.<br>
+>• Creatng the queue with a maximum size of self.noOfNodes also takes O(V) tme.<br>
 ### 2. While Loop:
 >• The while loop runs untl the queue is empty, and in the worst case, it can run once for
-each node in the graph. So, it iterates O(V) tmes. Inside the Loop:
->• The for neighbors in range(self.noOfNodes) loop iterates over all nodes, which is O(V).
+each node in the graph. So, it iterates O(V) tmes. Inside the Loop:<br>
+>• The for neighbors in range(self.noOfNodes) loop iterates over all nodes, which is O(V).<br>
 >• The check self.graphmatrics[visi;ngnode][neighbors] == 1 and not
-visitednodes[neighbors] takes constant tme for each neighbor.
+visitednodes[neighbors] takes constant tme for each neighbor.<br>
 ### 3. Enqueuing and Marking:
-> • Enqueuing a neighbor (queue.put(neighbors)) and marking it as visited (visitednodes[neighbors] = True) takes constant tme.
-So, the overall tme complexity of the BFS traversal in this code is O(V^2). This is because, in the worst case, the code might visit every node, and for each node, it might visit all its neighbors, resultng in a O(V^2).
+> • Enqueuing a neighbor (queue.put(neighbors)) and marking it as visited (visitednodes[neighbors] = True) takes constant tme.<br>
+> So, the overall tme complexity of the BFS traversal in this code is O(V^2). This is because, in the worst case, the code might visit every node, and for each node, it might visit all its neighbors, resultng in a O(V^2).<br>
